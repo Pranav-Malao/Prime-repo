@@ -1,3 +1,7 @@
+repository - folder 
+remote repo - repos on github
+local repo - repos on pc
+
 ls --> to print name of files in that folder
 pwd --> current working directory
 clear --> to clear
@@ -10,6 +14,7 @@ git clone https://github.com/Pranav-Malao/Prime-repo.git
 apane system me laane ke liye.
 
 cd Prime-repo --> change current working directory to Prime-repo.
+cd ..   --> to move out of any folder.
 
 ls -a  --> to view all files including hidden files.
 
@@ -20,6 +25,32 @@ git add .  --> to add all files.
 
 git commit -m "message..." --> to commit all(msg says ki hame kya changes kiye hai
 (for further reference of programmers))
+
+git push origin main  --> to push our changes to github.
+
+ORIGIN means the remote repository from where we cloned
+
+##### To create a repo from a premade folder #####
+
+1. mkdir local-repo  --> to make a folder.
+
+2. git init  --> initialises that folder as a git repo.
+ 
+3. github par ek empty repo banao phir uski link copy kar lo
+4. git remote add origin https://github.com/Pranav-Malao/localrepo.git   
+--> git remote ko bol rahe hai ki "origin" naam se ek
+remote repo add karo.
+
+git remote -v  --> to verify ki apan kaunsi remote par hai 
+
+5. git branch --> to get branch name (master)
+but we should rename it as main so  -->
+git branch -M main  --> to rename repo as main.
+
+6. git push origin main
+    git push -u origin main (upstream 
+    abse har baar sirf git push se hi kaam ho jayega)
+
 
 touch filename --> to create a new file.
 git add -A --> To add all files in staging area,
