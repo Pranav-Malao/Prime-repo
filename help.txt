@@ -1,0 +1,27 @@
+ls --> to print name of files in that folder
+pwd --> current working directory
+clear --> to clear
+
+git config --global user.name "Pranav-Malao"
+git config --global user.email "pranavmalao909@gmail.com"
+
+git clone https://github.com/Pranav-Malao/Prime-repo.git
+--> github se koi repository ko copy karke 
+apane system me laane ke liye.
+
+cd Prime-repo --> change current working directory to Prime-repo.
+
+ls -a  --> to view all files including hidden files.
+
+git status --> to know the status.
+
+git add filename --> add a file to staged area.
+git add .  --> to add all files.
+
+git commit -m "message..." --> to commit all(msg says ki hame kya changes kiye hai
+(for further reference of programmers))
+
+touch filename --> to create a new file.
+git add -A --> To add all files in staging area,
+git checkout filename --> pichle commit tak rollback
+git checkout -f --> to rollback all
