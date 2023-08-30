@@ -6,6 +6,11 @@ ls --> to print name of files in that folder
 pwd --> current working directory
 clear --> to clear
 
+touch filename --> to create a new file.
+git add -A --> To add all files in staging area,
+git checkout filename --> pichle commit tak rollback
+git checkout -f --> to rollback all
+
 git config --global user.name "Pranav-Malao"
 git config --global user.email "pranavmalao909@gmail.com"
 
@@ -51,8 +56,40 @@ git branch -M main  --> to rename repo as main.
     git push -u origin main (upstream 
     abse har baar sirf git push se hi kaam ho jayega)
 
+###### BRANCHES ######
 
-touch filename --> to create a new file.
-git add -A --> To add all files in staging area,
-git checkout filename --> pichle commit tak rollback
-git checkout -f --> to rollback all
+git branch  --> to check branch name
+git branch -M main  --> to rename ranch to main
+
+git checkout <- branch name->   --> to get out of that branch
+
+git checkout -b <-new branch name->  --> to create a new branch.
+
+git chechout -d <-branch name->  --> to delete that branch(branch other than current branch can be deleted).
+
+git push origin feature1  --> to push changes to this branch.
+
+###### MERGING BRANCHES ######
+1. git bash --> git merge main  (merge current branch(feature1) to main).
+2. github(PR - pull requests)
+
+git diff feature1  --> current branch se feature1 branch ke differences batayega
+
+to get the changes from github to our local system-->
+git pull origin main.
+
+#### UNDOING CHANGES #### 
+git reset <-filename->  --> staged area se wapis lane ke liye
+
+git reset HEAD~1 --> undo last commit
+
+git log  --> commit logs.
+
+git reset <-hash code->  --> uss commit tak vapis jane ke liye
+
+git --hard <-hash->  --> to also reset in vs code.
+
+#### FORK ####
+to make copy of someone other's project
+and we can make changes to it and then make pull request 
+that please pull our code
